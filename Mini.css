@@ -1,0 +1,35 @@
+input{
+	color:black;
+	padding: 8px;
+	margin: 7px;
+	width: 75%;
+}
+
+#top{
+	margin-top: 170px;
+}
+
+div{
+	background-color: grey;
+	/*display: -webkit;*/
+    -webkit-align-items: center; 
+    align-items: center;  
+}
+
+.container-fluid{
+	box-shadow: 0.5px 0.5px 6px 8px rgba(0,0,0,0.2);
+	width: 25%;
+	height: 75%;
+	margin-top:100px;
+}
+
+input[type='button'],input[type='submit']{
+	background-color:cyan;
+	border:none;
+	color:black;
+	cursor:pointer;
+}
+
+body{
+        background-image: url("mnews.jpg");
+} 
