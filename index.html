@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="home.css">
   </head>
   <body>
-        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
+
 <div id="feed"></div> 
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
      
@@ -101,8 +102,8 @@
     <script type="text/javascript">
       google.load("feeds", "1");
        function initialize() {
-       
-         var feed = new google.feeds.Feed("http://news.google.com/news?geo="+sol+"&output=rss");
+       var urls = "http://news.google.com/news?geo="+sol.split(" ")[1]+"&output=rss";
+         var feed = new google.feeds.Feed(urls);
       feed.load(function(result) {
         
          
