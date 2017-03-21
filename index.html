@@ -103,7 +103,7 @@
       google.load("feeds", "1");
        function initialize() {
        var urls = "http://news.google.com/news?geo="+sol.split(" ")[1]+"&output=rss";
-         var feed = new google.feeds.Feed(urls);
+         var feed = new google.feeds.Feed(urls,{api_key:'qa8ckkut8y6wuldeidop9zxnspzjy8yegebmkdxb'});
       feed.load(function(result) {
         
          console.log(JSON.stringify(result));
