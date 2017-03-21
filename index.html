@@ -114,7 +114,7 @@
             var el = document.createElement("div");
             var anc = document.createElement("a");
          
-            anc.setAttribute("href",entry.link);
+            anc.setAttribute("href",entry.link.split(";")[7].split("=")[1]);
             anc.setAttribute("target","_blank");
             anc.innerHTML=sol+": "+entry.title;
             el.appendChild(anc);
