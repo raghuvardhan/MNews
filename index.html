@@ -106,7 +106,8 @@
          var feed = new google.feeds.Feed(urls);
       feed.load(function(result) {
         
-         
+         console.log(JSON.stringify(result));
+
          var container = document.getElementById("feed");
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
